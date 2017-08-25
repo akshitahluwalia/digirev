@@ -4,7 +4,7 @@ import App from './App'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Navbar from './Navbar.js';
-import Card from './Card1.js';
+import Cardin from './Card1.js';
 
  
 injectTapEventPlugin();
@@ -16,7 +16,8 @@ const Main = () => (
  </div>
 
  <div>
- 	<Card1/>
+ 	<Cardin/>
+ 	<App/>
  </div>
  </MuiThemeProvider>
  );
