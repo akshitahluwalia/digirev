@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Navbar from './Navbar.js';
 import Comm from './Comm.js';
 import UserHistory from './UserHistory.js';
 import Seekers from './Seekers.js';
 import ApplyForm from './ApplyForm.js';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import Toolbaradd from './toolbar.js'
  
 injectTapEventPlugin();
 
@@ -17,7 +17,7 @@ const Main = () => (
   <MuiThemeProvider>
   
  <div>
- 	<Navbar/>
+ 	<Toolbaradd/>
  <Router>
       <div>
         <Route exact path="/" component={App} />
